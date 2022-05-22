@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Iframe Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #sidemenu div {
+        background-color: #7ff21b;
+
+        padding: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+      }
+      #sidemenu {
+        flex: 1;
+        padding: 5px;
+        border-right: 2px solid black;
+        background-color: #010101;
+      }
+      #iframe {
+        flex: 5;
+      }
+      iframe {
+        padding: 5px;
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="sidemenu">
+        <div>
+          <a href="mobile.html" target="rightPanel">Mobile</a>
+        </div>
+
+        <div>
+          <a href="tv.html" target="rightPanel">TV</a>
+        </div>
+        <div>
+          <a href="laptop.html" target="rightPanel">Laptop</a>
+        </div>
+        <div>
+          <a href="Menclothing.html" target="rightPanel">Men's clothing</a>
+        </div>
+      </div>
+
+      <div id="iframe">
+        <iframe name="rightPanel"> </iframe>
+      </div>
+    </div>
+  </body>
+</html>

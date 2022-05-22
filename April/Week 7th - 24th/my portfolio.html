@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(131deg,limegreen,coral,limegreen);
+        }
+
+        /* Navbar styling */
+        .navbar {
+            
+            background-color: black;
+            border-radius: 20px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar li a {
+            padding: 5px 5px;
+            text-decoration: none;
+            color: rgb(248, 245, 245)
+        }
+
+        .navbar li a:hover {
+            color: greenyellow;
+            font-size: 17px
+        }
+
+        .search {
+            float: right;
+            padding: 10px 45px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 90px;
+            height: 5px;
+            border-radius: 30px;
+            text-align: center;
+
+        }
+
+        /* container styling */
+        img {
+            float: left;
+            border: 2px solid black;
+            border-radius: 65px;
+            margin: 20px;
+        }
+
+        div {
+            text-align: center;
+
+        }
+
+        p {
+            text-align: left;
+            padding-left: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+
+        /* table styling */
+        table{display: inline;}
+        .images {
+            margin: 30px;
+            border-radius: 90px; cursor: pointer;
+        }
+
+        .ip {
+            text-align: center;
+            font-size: 25px; cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">RESUME</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <div class="search">
+                    <input type="text" class="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container1">
+        <section>
+            <img src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720__480.jpg" width="150px"
+                height="150px" alt="Profile image" id="img">
+        </section>
+
+        <h1>Hello Everyone ! </h1>
+        <p>My name is Puneeth Kumar C and I am from Bangalore. I completed my Btech in Electrical and Electronics
+            Engineering at Presidency University.</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem provident excepturi illo. Soluta
+            voluptates provident ipsum ex, dolore, obcaecati aliquam magni voluptatibus, sunt deserunt dolores. In id
+            nesciunt quod molestias repellat hic officiis vitae modi velit ad, error rerum!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem provident excepturi illo. Soluta
+            voluptates provident ipsum ex, dolore, obcaecati aliquam magni voluptatibus, sunt deserunt dolores. In id
+            nesciunt quod molestias repellat hic officiis vitae modi velit ad, error rerum!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem provident excepturi illo. Soluta
+            voluptates provident ipsum ex, dolore, obcaecati aliquam magni voluptatibus, sunt deserunt dolores. In id
+            nesciunt quod molestias repellat hic officiis vitae modi velit ad, error rerum!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem provident excepturi illo. Soluta
+            voluptates provident ipsum ex, dolore, obcaecati aliquam magni voluptatibus, sunt deserunt dolores. In id
+            nesciunt quod molestias repellat hic officiis vitae modi velit ad, error rerum!
+        </p>
+        <p><i><b>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem provident excepturi illo. Soluta
+            voluptates provident ipsum ex, dolore, obcaecati aliquam magni voluptatibus, sunt deserunt dolores. In id
+            nesciunt quod molestias repellat hic officiis vitae modi velit ad, error rerum!</b></i>
+        </p>
+       
+    </div>
+    <section>
+        <div class="container2">
+            <table>
+                <tr>
+                    <tbody>
+                        <tr class="tb1">
+                            <td>
+                                <div>
+                                    <img src="https://images.pexels.com/photos/4065864/pexels-photo-4065864.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                                        width="200px" height="200px" alt="Error Loading" Class="images">
+                                    <p class="ip"><b> About </b> </p>
+                                </div>
+                            </td>
+                            
+                            <td>
+                                <div>
+                                    <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                                        width="200px" height="200px" alt="Error Loading" Class="images">
+                                    <p class="ip"><b> Resume </b> </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                                        width="200px" height="200px" alt="Error Loading" Class="images">
+                                    <p class="ip"><b> Projects </b> </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCk9MTsj5pE-i-GeCcNBfs-ae6xP4-xkyidA&usqp=CAU"
+                                        width="200px" height="200px" alt="Error Loading" Class="images">
+                                    <p class="ip"><b> Contact </b> </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <footer style="text-align: center;height: 200px;background-color: black;color: aliceblue;margin: 0px;">
+            <section>
+
+                <p style="padding: 50px;"><b>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, eum, quaerat totam id quisquam
+                        cupiditate officiis delectus ea sed ad consequatur inventore amet consectetur impedit molestiae
+                        at recusandae. Odio, eligendi eaque consectetur maiores provident ab! Amet, facilis vel. Id,
+                        cumque.
+                    </b></p>
+            </section>
+
+
+            copyright ©
+            Reserved All Rights <br>
+
+            PUNEETH KUMAR C
+
+        </footer>
+    </section>
+
+
+</body>
+
+</html>
