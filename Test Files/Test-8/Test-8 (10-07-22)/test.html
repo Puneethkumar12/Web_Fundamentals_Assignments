@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Api Demo</title>
+    <style>
+    
+    .container{
+     
+     padding: 10px;
+     margin: 100px auto;
+     border: 2px solid red;
+     width: 500px;
+     height: 500px;
+     border-radius: 40px;
+     background-color: bisque;
+     box-shadow: 0 1px 20px 2px black;
+     
+    }
+
+    .t1{
+        margin: 20px auto;
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+    }
+    
+    #btn{
+        margin-left:190px ;
+        background-color: rgb(232, 193, 148);
+        width: 120px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+       
+    </style> 
+</head>
+<body>
+    <div class="container" id="text">
+        <p class="t1" id="name" name="name">Puneeth kumar </p> <br>
+        <p class="t1" id="email">Puneeth@gmail.com</p> <br>
+        <p class="t1" id="city">Bangalore</p> <br>
+        <p class="t1" id="website">www.puneethkumar.com</p> <br>
+        <button id="btn"onclick='submit()'>Fetch Data</button>
+    </div>
+    
+    <script>
+       
+         let name = document.getElementById('name') ;
+         let email = document.getElementById('email') ;
+         let city = document.getElementById('city') ;
+         let website = document.getElementById('website') ;
+         let text = document.getElementById('text') ;
+          
+         
+
+         const getData = async () => {
+    const URL = 'https://jsonplaceholder.typicode.com/users '
+    console.log(URL)
+
+    const response = await fetch(URL)
+console.log(response)
+    // console.log(response.json);
+    const data = await response.json();
+    console.log(data);
+    
+    showData(data)
+}
+    
+const showData = (data) =>{
+
+console.log('inside showData' , data)
+// console.log(data[0].name);
+
+// code for making it more dynamic by using for loop 
+
+// for(i=0;i<=data.length;i--){
+// name.innerText = `${data[i].name}`
+// email.innerText = `${data[i].email}`
+// city.innerText = `${data[i].address.city}`
+// website.innerText = `${data[i].website}`
+// }
+
+
+// code without dynamic 
+name.innerText = `${data[0].name}`
+email.innerText = `${data[0].email}`
+city.innerText = `${data[0].address.city}`
+website.innerText = `${data[0].website}`
+
+
+
+}
+
+ function submit(){
+ getData()
+
+ }
+
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>
+
+
